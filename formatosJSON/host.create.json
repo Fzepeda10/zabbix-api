@@ -1,0 +1,37 @@
+{
+    "jsonrpc": "2.0",
+    "method": "host.create",
+    "params": {
+        "host": "prueba",
+        "interfaces": [
+            {
+                "type": 1,
+                "main": 1,
+                "useip": 1,
+                "ip": "192.168.3.1",
+                "dns": "",
+                "port": "10050"
+            },
+            {
+                "type": 2,
+                "main": 1,
+                "useip": 1,
+                "ip": "192.168.3.1",
+                "dns": "",
+                "port": "161",
+                "details": {
+                        "version": "2",
+                        "bulk": "1",
+                        "community": "{$SNMP_COMMUNITy}"
+                    } 
+            }
+        ],
+        "groups": [
+            {
+                "groupid": "20"
+            }
+        ]
+    },
+    "id": 1,
+    "auth": "b7b0f2fd2997558a8ed3bcae9cb4cab9"
+}
